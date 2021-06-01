@@ -1,34 +1,53 @@
 import React from 'react';
-import { Carousel } from 'react-bootstrap';
+import { Carousel, Container, Card } from 'react-bootstrap';
 
-const Carousel = () => {
+const CarouselComp = () => {
  return (
-  <div>
-   <Carousel>
-    <Carousel.Item interval={1000}>
-     <img className='d-block w-100' src='/images/001.jpg' alt='First slide' />
-     <Carousel.Caption>
-      <h3>First slide label</h3>
-      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-     </Carousel.Caption>
-    </Carousel.Item>
-    <Carousel.Item interval={500}>
-     <img className='d-block w-100' src='/images/001.jpg' alt='Second slide' />
-     <Carousel.Caption>
-      <h3>Second slide label</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-     </Carousel.Caption>
-    </Carousel.Item>
-    <Carousel.Item>
-     <img className='d-block w-100' src='/images/001.jpg' alt='Third slide' />
-     <Carousel.Caption>
-      <h3>Third slide label</h3>
-      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-     </Carousel.Caption>
-    </Carousel.Item>
-   </Carousel>
+  <div className=''>
+   <Container>
+    <Carousel sm={12} md={6} lg={4} xl={3}>
+     <Carousel.Item interval={2000}>
+      <Card.Img
+       className='w-50 my-3 p-3 rounded'
+       src='/images/001.jpg'
+       alt='First slide'
+      />
+      {/* <img  /> */}
+      <Carousel.Caption>
+       {/* <h3>First slide label</h3>
+      <p>Nulla vitae elit libero</p> */}
+      </Carousel.Caption>
+     </Carousel.Item>
+
+     <Carousel.Item interval={2000}>
+      <Card.Img
+       className='w-50 my-3 p-3 rounded'
+       src='/images/002.jpg'
+       alt='Second slide'
+      />
+      {/* <img /> */}
+      <Carousel.Caption>
+       {/* <h3>Second slide label</h3>
+      <p>Lorem ipsum dolor sit amet</p> */}
+      </Carousel.Caption>
+     </Carousel.Item>
+
+     <Carousel.Item interval={2000}>
+      <Card.Img
+       className='w-50 my-3 p-3 rounded'
+       src='/images/004.jpg'
+       alt='Third slide'
+      />
+      {/* <img /> */}
+      <Carousel.Caption>
+       {/* <h3>Third slide label</h3>
+      <p>Praesent commodo cursus magna</p> */}
+      </Carousel.Caption>
+     </Carousel.Item>
+    </Carousel>
+   </Container>
   </div>
  );
 };
 
-export default Carousel;
+export default CarouselComp;
