@@ -2,8 +2,10 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import Carousel from './components/Carousel';
-import HomeScreen from './screens/HomeScreen';
+import BootstrapCarousel from './components/BootstrapCarousel';
+import HomeComponent from './components/HomeComponent';
+import GalleryScreen from './screens/GalleryScreen';
+import AboutLakGelScreen from './screens/AboutLakGelScreen';
 
 function App() {
  return (
@@ -11,8 +13,10 @@ function App() {
    <Header />
    <main>
     <Container>
-     <Carousel />
-     <Route path='/' component={HomeScreen} exact />
+     <Route path='/' component={HomeComponent} exact />
+     <Route path='/' component={BootstrapCarousel} exact />
+     <Route path='/gallery' component={GalleryScreen} />
+     <Route path='/aboutlakgel' component={AboutLakGelScreen} />
     </Container>
    </main>
    <Footer />
