@@ -37,7 +37,7 @@ const Header = () => {
         </Button>
        </LinkContainer>
        <LinkContainer to='/signin' className='me-1 p-2'>
-        <Nav.Link>Log In</Nav.Link>
+        <Nav.Link className='btn'>Log In</Nav.Link>
        </LinkContainer>
       </Nav>
      </Navbar.Collapse>
