@@ -15,17 +15,28 @@ const Header = () => {
      <Navbar.Toggle aria-controls='basic-navbar-nav' />
      <Navbar.Collapse id='basic-navbar-nav'>
       <Nav className='ms-auto'>
-       <LinkContainer to='/aboutLakGel'>
-        <Button type='button' className='btn btn-primary me-1'>
+       <LinkContainer to='/waze' className='me-1 p-2'>
+        <Button type='button' className='btn btn-primary ' size='lg'>
+         {/* <i className='fab fa-waze fa-2x'></i>  */}
+         Waze
+        </Button>
+       </LinkContainer>
+       <LinkContainer to='tel:0548002334' className='me-1 p-2'>
+        <Button type='button' className='btn btn-primary ' size='lg'>
+         054-800-2334
+        </Button>
+       </LinkContainer>
+       <LinkContainer to='/aboutLakGel' className='me-1 p-2'>
+        <Button type='button' className='btn btn-primary' size='lg'>
          מה זה לק ג’ל
         </Button>
        </LinkContainer>
-       <LinkContainer to='/gallery'>
-        <Button type='button' className='btn btn-primary'>
+       <LinkContainer to='/gallery' className='me-1 p-2'>
+        <Button type='button' className='btn btn-primary' size='lg'>
          גלריה עבודות
         </Button>
        </LinkContainer>
-       <LinkContainer to='/signin'>
+       <LinkContainer to='/signin' className='me-1 p-2'>
         <Nav.Link>Log In</Nav.Link>
        </LinkContainer>
       </Nav>

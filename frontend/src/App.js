@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import BootstrapCarousel from './components/BootstrapCarousel';
 import HomeComponent from './components/HomeComponent';
+import OverlaysComponent from './components/OverlaysComponent';
 import GalleryScreen from './screens/GalleryScreen';
 import AboutLakGelScreen from './screens/AboutLakGelScreen';
 
@@ -13,8 +14,8 @@ function App() {
    <Header />
    <main>
     <Container>
-     <Route path='/' component={HomeComponent} exact />
-     <Route path='/' component={BootstrapCarousel} exact />
+     <Route path='/' component={OverlaysComponent} exact />
+     {/* <Route path='/' component={BootstrapCarousel} exact /> */}
      <Route path='/gallery' component={GalleryScreen} />
      <Route path='/aboutlakgel' component={AboutLakGelScreen} />
     </Container>
