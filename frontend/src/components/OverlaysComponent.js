@@ -4,7 +4,7 @@ import BootstrapCarousel from './BootstrapCarousel';
 
 const OverlaysComponent = () => {
  return (
-  <Card className='justify-content-md-center mb-3'>
+  <Card>
    <Image src='./images/thumb-1920-706578.png' fluid roundedCircle />
    <Card.ImgOverlay>
     <BootstrapCarousel />
